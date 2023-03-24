@@ -10,21 +10,29 @@ namespace PowerCollections
     {
         private T[] elements;
 
-        int count = 0;
-        public int Capacity { get; }
+        int count = 0; 
+        //new in 0.0.3-beta
+        public int Capacity 
+        {   
+            get { return elements.Length; }
+        }
 
         public int Count 
         {
             get { return count; } 
         }
-
+        //new in 0.0.2-beta
+        public Stack()
+        {
+            const int defaultCapacity = 100;
+            elements = new T[defaultCapacity];
+        }
         public Stack(int max_size_stack)
         {
             if (max_size_stack <= 0)
             {
                 throw new ArgumentOutOfRangeException("Ошибка.Размер стека не может быть равен или меньше нуля");
             }
-            Capacity = max_size_stack;
             elements = new T[max_size_stack];
         }
 
