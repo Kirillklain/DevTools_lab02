@@ -7,7 +7,18 @@ using System.Text;
 namespace PowerCollections
 {
     public class Stack<T> : IEnumerable<T>
-    
+    {
+        private T[] elements;
+
+        int count = 0; 
+        //new in 0.0.3-beta
+        public int Capacity 
+        {   
+            get { return elements.Length; }
+        }
+
+        public int Count 
+        {
             get { return count; } 
         }
         //new in 0.0.2-beta
