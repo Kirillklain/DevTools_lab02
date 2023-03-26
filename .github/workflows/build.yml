@@ -24,8 +24,8 @@ jobs:
       run: dotnet restore
       working-directory: PowerCollections
     - name: dotnet build
-      run: dotnet build
+      run: dotnet build 
       working-directory: PowerCollections
     - name: dotnet test
-      run: dotnet test --no-build
+      run: dotnet test --no-build --verbosity normal
       working-directory: PowerCollections
