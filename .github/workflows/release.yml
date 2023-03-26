@@ -1,0 +1,42 @@
+name: release
+
+on: workflow_dispatch
+
+jobs:
+
+  build_release:
+    runs-on: windows-latest  # For a list of available runner types, refer to
+                             # https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idruns-on
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: dotnet pack
+      run: dotnet pack 
+      working-directory: PowerCollections
+    - name: dotnet push
+      run: dotnet nuget push "PowerCollections\bin\Debug\*.nupkg" -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/Kirillklain/index.json --skip-duplicate 
+      working-directory: PowerCollections
+      
+    - name: Get XML Info
+      id: getxml
+      uses: mavrosxristoforos/get-xml-info@1.1.1
+      with:
+        xml-file: 'PowerCollections\PowerCollections\PowerCollections.csproj'
+        xpath: '//Version'
+
+    - name: release
+      uses: ncipollo/release-action@v1.12.0
+      with:
+        artifacts: 'PowerCollections\PowerCollections\bin\Debug\*.PowerCollections.${{ steps.getxml.outputs.info }}.nupkg'
+        tag: 'v${{ steps.getxml.outputs.info }}'
+        token:  ${{ secrets.GITHUB_TOKEN }} 
