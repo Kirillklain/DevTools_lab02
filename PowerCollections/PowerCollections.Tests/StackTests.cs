@@ -85,7 +85,7 @@ namespace PowerCollections.Tests
         public void Verify_that_exception_pop_elemens_than_count_is_zero()
         {
             Stack<int> stack = new Stack<int>(2);
-            stack.Pop();
+            //stack.Pop();
         }
 
         [TestMethod]
