@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "0VyA+37WO50kzWbcuoSu36Dfa3CMnWr0J+9PsiQSUV/n7f89ZJMCJr+ommIsgCEk/kQZ7ScM7GXfEa472LYRiw==",
+  "success": true,
+  "projectFilePath": "R:\\ProgramProjects\\keril\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guruz\\.nuget\\packages\\kirillklain.powercollections\\0.0.3-beta\\kirillklain.powercollections.0.0.3-beta.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "No Authorization header detected"
+    }
+  ]
+}

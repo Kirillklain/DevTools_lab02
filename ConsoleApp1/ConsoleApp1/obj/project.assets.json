@@ -1,0 +1,108 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Kirillklain.PowerCollections/0.0.3-beta": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/PowerCollections.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/PowerCollections.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Kirillklain.PowerCollections/0.0.3-beta": {
+      "sha512": "+KrylnDHMDXZKAVBnbCpY1ugfw2Gl7wZuj5kjJZTzDnMUiLNMHXXEl8PYjSNL3DER156wp0YtmdMFxVKgjKeIQ==",
+      "type": "package",
+      "path": "kirillklain.powercollections/0.0.3-beta",
+      "files": [
+        ".nupkg.metadata",
+        "kirillklain.powercollections.0.0.3-beta.nupkg.sha512",
+        "kirillklain.powercollections.nuspec",
+        "lib/netstandard2.1/PowerCollections.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Kirillklain.PowerCollections >= 0.0.3-beta"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\guruz\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "R:\\ProgramProjects\\keril\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectName": "ConsoleApp1",
+      "projectPath": "R:\\ProgramProjects\\keril\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\guruz\\.nuget\\packages\\",
+      "outputPath": "R:\\ProgramProjects\\keril\\ConsoleApp1\\ConsoleApp1\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\guruz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.pkg.github.com/Anton7662/index.json": {},
+        "https://nuget.pkg.github.com/Kirillklain/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Kirillklain.PowerCollections": {
+            "target": "Package",
+            "version": "[0.0.3-beta, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "No Authorization header detected"
+    }
+  ]
+}

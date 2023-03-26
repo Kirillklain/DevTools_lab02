@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ConsoleApp1/1.0.0": {
+        "dependencies": {
+          "Kirillklain.PowerCollections": "0.0.3-beta"
+        },
+        "runtime": {
+          "ConsoleApp1.dll": {}
+        }
+      },
+      "Kirillklain.PowerCollections/0.0.3-beta": {
+        "runtime": {
+          "lib/netstandard2.1/PowerCollections.dll": {
+            "assemblyVersion": "1.0.8483.32908",
+            "fileVersion": "1.0.8483.32908"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleApp1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Kirillklain.PowerCollections/0.0.3-beta": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+KrylnDHMDXZKAVBnbCpY1ugfw2Gl7wZuj5kjJZTzDnMUiLNMHXXEl8PYjSNL3DER156wp0YtmdMFxVKgjKeIQ==",
+      "path": "kirillklain.powercollections/0.0.3-beta",
+      "hashPath": "kirillklain.powercollections.0.0.3-beta.nupkg.sha512"
+    }
+  }
+}
